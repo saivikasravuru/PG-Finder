@@ -4,10 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Find PG Near SRM</title>
+
+    <!-- Google Font (same modern style) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ===== BACKGROUND IMAGE ===== */
+        body {
+            height: 100vh;
+            background: url("SRM.jpg") no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        /* Dark overlay like screenshot */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: -1;
+        }
+
+        /* ===== TOP SEARCH BAR ===== */
+        .top-search {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+        }
+
+        .top-search input {
+            padding: 12px 18px;
+            width: 320px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.85);
+            font-size: 14px;
+        }
+
+        /* ===== CENTER CONTENT ===== */
+        .center-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 42px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-family: 'Baloo 2', cursive;
+        }
+
+
+        /* Dropdown */
+        select {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            background: white;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- Top Search -->
+    <div class="top-search">
+        <input type="text" placeholder="Search for stay, things to do more......">
+    </div>
+
+    <!-- Center Content -->
+    <div class="center-container">
+
+        <h1>FIND PG'S NEAR BY SRM</h1>
+
+        <div class="dropdown-box">
+            <select id="location">
+                <option value="">Pick the Location for the Stay....</option>
+                <option value="potheri">Potheri</option>
+                <option value="thilavaram">Thilavaram</option>
+            </select>
+        </div>
+
+    </div>
+
+    <script>
+
+        /* ===== DROPDOWN ACTION ===== */
+        document.getElementById("location").addEventListener("change", function () {
+
+            let location = this.value;
+
+            if (location === "potheri") {
+                alert("Showing PGs in Potheri");
+                // later you can redirect:
+                // window.location.href="potheri.html";
+            }
+
+            if (location === "thilavaram") {
+                alert("Showing PGs in Thilavaram");
+                // window.location.href="thilavaram.html";
+            }
+
+        });
+
+    </script>
 
 </body>
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Green Nest PG",
+    "owner": "Ramesh",
+    "phone": "9876543210",
+    "rent": 6500,
+    "location": "Potheri",
+    "image": "https://via.placeholder.com/200"
+  },
+  {
+    "id": 2,
+    "name": "Sai Residency",
+    "owner": "Lakshmi",
+    "phone": "9123456789",
+    "rent": 7500,
+    "location": "Kattankulathur",
+    "image": "https://via.placeholder.com/200"
+  }
+]
