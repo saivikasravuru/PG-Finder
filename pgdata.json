@@ -17,4 +17,13 @@
     "location": "Kattankulathur",
     "image": "https://via.placeholder.com/200"
   }
+   {
+    "id": 3,
+    "name": "Avita Residency",
+    "owner": "Saravanan S",
+    "phone": "‪8610427306",
+    "rent": 15000,
+    "location": "Thailavaram Signal",
+    "image": "https://via.placeholder.com/200"
+  }
 ]
